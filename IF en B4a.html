@@ -1,0 +1,171 @@
+<!--ShEOl´s Land-->
+<html> 
+
+<body background="flor 2.jpg"> 
+
+<head> 
+
+    <title>B4A IF</title> 
+
+</head> 
+
+<body> 
+
+    <h1 style="color:#ffffff">Sentencia condicional IF</h1> 
+
+<p style="color:#ffffff"> 
+
+     <br>"La instrucción o sentencia if, controla el flujo de ejecución del programa. Dependiendo de una condición, ejecuta una secuencia de instrucciones o no las ejecuta". 
+
+     
+
+    <br>"La condición es un booleano. el resultado podrá ser verdadero o falso. solo so es verdadero se ejecuta la instrucción". 
+
+     
+
+    <br>"A la instrucción if se le puede agregar una cláusula <i>else</i>, que permite ejecutar una instrucción o un bloque de instrucciones en el caso de que la condición no se cumpla". 
+
+</p> 
+
+<p style="color:#ffffff"> 
+
+     <br>Es decir que cuando nosotros tengamos que escoger entre una cosa u otra nosotros usaremos la condición if para decidir, ejemplo: 
+
+  
+
+    <br>En el caso de que nuestra condición sea "sí estudio pasare el examen de mi profesor" esto se responderá en sí o no, en caso de ser si <i>"TRUE"</i> la respuesta sería verdad y ejecutaríamos lo que es el resultado de estudiar que en dado caso aprobaríamos, en caso de ser no <i>"ELSE"</i> la respuesta esto indicaría ser mentira es decir que reprobaríamos por no saber nada, así es cómo funciona el comando de manera global. 
+
+        
+
+        <br><img src="diagrama.jpg"> 
+
+</p> 
+
+    <h2 style="color:#ffffff">Comencemos con la practica</h2> 
+
+  
+
+<p style="color:#ffffff"> 
+
+  
+
+     <br>Antes de empezar debemos editar el compilado de nuestro programa, para eso deberemos guardar como cualquier otro archivo de b4a en una carpeta vacía, nos iremos a configurar en la barra de opciones: Proyecto-Configuración de compilado(Crl+B) y cambiaremos solo la 3ra opción pondremos com.consentencias.test 
+
+  
+
+     <br>com es la librería 
+
+  
+
+     <br>consentencias es el identificador 
+
+  
+
+     <br>test es para decir que es un programa de prueba 
+
+     <br> Te dejo la imagen para que sea más fácil copear 
+
+     <br> <img src="compilado.jpg"> 
+
+     <br>De esta manera quedaría tu configuración. 
+
+<hr /> 
+
+<br> 
+
+<hr /> 
+
+</p> 
+
+<p style="color:#ffffff"> 
+
+     <br>Ya que sabes cómo comenzar veamos como es el diseño, abrimos el diseñador y comenzamos a arrastrar un cuadro de texto, un botón y una etiqueta.  
+
+<br> 
+
+     <br>A cada una de ellas les cambiaremos el nombre para facilitar su nombre yo los dejare tal cual para demostrar cómo se hace, pero si gustan pueden cambiarlo a gustos. 
+
+<br> 
+
+     <br> Una vez hecho lo dicho, comenzaremos a mandar el cuadro a nuestra consola ¿Cómo lo hacemos? pues fácil, das click derecho cada uno de los cuadros del diseñador (de los "cuadros de texto, botón y etiqueta") vamos a la parte de general, y clickeamos donde dice dim" cuadro, botón, etiqueta" y así los tenemos en la consola. 
+
+<br> 
+
+     <br>Para crear un evento tenemos que presionar el botón con click derecho, general y el apartado que dice click y así daremos lugar a que al dar click comenzaremos un evento, ejemplo: 
+
+<br> 
+
+     <br><img src="dim.jpg"> 
+
+    <br>En caso de haber hecho todo bien debería quedar algo así: 
+
+    <br><img src="globals.jpg"> 
+
+</p> 
+
+  
+
+<p style="color:#ffffff"> 
+
+<br>Continuando en el diseño, para cambiar textos que saldrán en nuestro dispositivo móvil deberemos ir a dar click izquierdo a el botón e irnos a propiedades a un apartado llamado text ahí es donde pondremos el texto que nosotros deseemos ejemplo: 
+
+<br> 
+
+<br><img src="boton.jpg"> 
+
+<br> 
+
+<br>Pero, en el caso de necesitar cambiar de letras a números en el cuadro de texto lo podremos hacer en la propiedad imput type a elección de cada necesidad, <i>pero recuerda que si en caso de poner en propiedad números, ya no podrás escribir letras, ya que solo saldrá en tu dispositivo números, pero en caso de dejarlo en text podrás seguir poniendo números y letras</i>, ejemplo: 
+
+<br> 
+
+<br><img src="text.jpg"> 
+
+</p> 
+
+  
+
+<h3 style="color:#ffffff">Comencemos con lo que es el IF</h3> 
+
+  
+
+<p style="color:#ffffff"> 
+
+    <br>Cuando usamos el código deberemos haber indicado lo que es el valor numérico, eso lo explicamos en la página anterior que son los que usamos para determinar cuánto número puede abarcar una variable en este caso pondremos número que nos servirá para usar el if 
+
+    <br> 
+
+    <br>Una vez que pongamos nuestros valores en el apartado de variables deberemos pasar a lo siguiente que es el código de IF. 
+
+    <br> 
+
+    <br>Pondremos la variable a modificar que será igual al cuadro de texto que hicimos en el diseñador+ un .text que esto nos dará el permiso de poner los números que necesitemos sin fallos 
+
+    <br> 
+
+    <br> comenzaremos por el código IF y nos pondrá un End IF que es donde se abre y se cierra la ejecución del if, después diremos si la variable número es mayor que cero entonces <i>"then"</i> eso nos dirá que saldrá en la etiqueta el número que pongamos siempre y cuando cumpla la condición de ser mayor que cero, lo escribiremos así Etiqueta.text = numero 
+
+    <br> 
+
+    <br>Por otro lado tendremos lo que viene siendo la mentira lo falso, que nos dice sí no <i>"sí no"</i> que sería lo que saldría cuando la condición IF no se cumple ponemos Etiqueta.text (es la etiqueta donde saldrá el numero o frase) es igual ("=") entre comillas dobles "número es un 0 o menor" es decir que el número es menor a cero, ósea negativo y así se cumpliría el sí es, o, sí no es ejemplo: 
+
+    <br> 
+
+    <br><img src="if.jpg"> 
+
+    <br> 
+
+    <br> nota en caso de poner letras en ambas respuestas sea positiva o negativa lo acompañan aremos con este signo & y el nombre de la variable, esto con el fin de que admita los textos sin ningún problema ejemplo: 
+
+<br> 
+
+<br><img src="&.jpg"> 
+
+</p> 
+
+<br><a href = "https://www.youtube.com/watch?v=ZSeB538DQT4&t=104s" style="color:#ffffff" > Para más información entra en este video. 
+    <br>
+<br><a href="manual B4a.html">Volver al manual
+</body> 
+
+</html> 

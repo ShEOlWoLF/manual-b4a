@@ -1,0 +1,106 @@
+<!--sheol´s Land-->
+<html>
+<body background="fondo 1.jpg"> 
+<head>
+	<title>Select (Switch)</title>
+</head>
+<body>
+         <h1  style="color:#ffffff">Introducción</h1> 
+
+<p style="color:#ffffff"> 
+
+  
+
+<br>La instrucción o select, controla el flujo de ejecución del programa.  
+
+<br>Dependiendo de una selección entre múltiples “casos”, ejecuta una secuencia de instrucciones o no las ejecuta. 
+
+<br>La <strong>Selección</strong> es un dato. 
+
+<br>Los <strong>Casos</strong> son valores que pueden contener dicho dato seleccionado. 
+
+<br>Dependiendo del valor del dato seleccionado ejecutará una acción. 
+
+  <br><img src="DS.jpg">  
+
+</p> 
+
+<h2 style="color:#ffffff">Select Switch</h2> 
+
+<p style="color:#ffffff"> 
+
+     <br> Primero comencemos por el configurado de compilado: 
+
+     <br><img src="config.jpg"> 
+
+     <br>Iniciemos entrando al diseñador virtual el cual nos servirá para diseñar la estética y agregado de objetos: 
+
+     <br>iniciaremos por agregar un "edit text" podemos cambiar el nombre a conveniencia yo lo pondré como "CuadroTexto": seguido nos iremos a propiedad de textos al apartado "Hint text" y pondremos "Ingresa una letra" 
+
+     <br>Partiendo del cuadro de texto pondremos un botón es elección de ustedes si quieren editar el nombre o no, seguido vamos a las propiedades del botón y pondremos el texto "EVALUAR" 
+
+     <br>Agregaremos una etiqueta 
+
+     <br>Guardamos el archivo 
+
+     <br>Nos quedaria asi 
+
+     <br> <img src="tabla.jpg"> 
+
+     <br>Deberemos enlazar nuestro diseño con nuestro código, con cada uno de los cuadros, deberemos dar click derecho, ir a la última opción(general) y seleccionar la primera opción que iniciará con "Dim" para los cuadros, excepto para el botón, deberemos hacer lo mismo hasta llegar a general donde la opción que tomaremos será la de click: 
+
+     <br><img src="a.jpg"> 
+
+</p> 
+
+<h3 style="color:#ffffff">Ahora viene la programación</h3> 
+
+<p style="color:#ffffff"> 
+
+<br>Deberemos crea la variable texto para usar en el cuadro de texto esto se hace de la siguiente manera: 
+
+<br>Dim Texto As String 
+
+<br>Deberemos declarar en el apartado de botón que cuando le demos click esta reproducirá la accion programada derivada del cuadro del texto, es decir que el botón será igual a lo que escribas en el cuadro. 
+
+<br> la línea de texto será así: Texto = CuadroTexto.text 
+
+<br>Ahora usaremos esto para el Select que sería así: 
+
+<br> 'Select Texto' esto deberá decir que para activar el comando Select este funcionara con el texto del cuadro de texto 
+
+<br> 'Case "a"' esto quiere decir que en el caso "a" sucederá lo que escribamos en la siguiente linea. 
+
+<br> pondremos Etiqueta.text = "La letra es A" esto con el fin de que cuando selecciones la letra "a" la etiqueta que pusimos en el diseñador muestre la frase antes mencionada. 
+
+<br> podemos poner las cantidades de letras que queramos siempre y cuando especifiquemos que queremos que haga cuando pongamos el Case porque para que funcione debemos declarar que para si nosotros ponemos X letra aquí un ejemplo de las vocales: 
+
+<br> en caso de ser otra letra que no sea vocal nos lanzara el texto otra letra 
+
+<br>Por último deberemos cerrar el comando Select: "End Select" 
+
+<br>Ejemplo: 
+
+<br> <img src="letras.jpg"> 
+
+<br>Como extra podemos agregar números, letras, nombres etc. siempre y cuando declaremos las variables respectivas de la misma manera que lo hicimos con String. (visita el apartado manual para saber más del tema de Variables) 
+
+<br>Aquí un ejemplo con números ya con su variable cambiada y los Case cambiados: 
+
+<br><img src="num.jpg"> 
+
+</p> 
+
+</body> 
+
+<p style="color:#ffffff"> 
+
+<br><a href="https://www.youtube.com/watch?v=OaYk6ZyIq14&feature=youtu.be">¿Dudas? Aqui un video por si no quedo muy clara la explicación 
+
+<br><a href="manual B4a.html">Volver al manual 
+
+</p> 
+
+</html> 
+
+ 
